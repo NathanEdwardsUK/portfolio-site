@@ -1,0 +1,27 @@
+#project-container {
+  border-color: grey;
+  border-width: 1px;
+  border-style: solid;
+}
+
+#gol-canvas-container {
+  width: 100%;
+  height: 330px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+#fittr-previews {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.tech-item {
+  padding: 4px 10px;
+  background-color: rgb(33, 33, 33);
+  border-radius: 4px;
+}
+
+.tech-item p {
+  margin-bottom: 0 !important;
+}

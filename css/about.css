@@ -1,0 +1,51 @@
+#portrait {
+  width: 250px;
+  object-fit: contain;
+  vertical-align: bottom !important;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+#tech-stack {
+  border-color: grey;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.tech-item {
+  background-color: rgb(33, 33, 33);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.tech-item p {
+  margin-bottom: 0 !important;
+}
+
+.experience-header {
+  height: 40px;
+}
+
+.company-logo-container {
+  margin: 0 15px 0 0;
+}
+
+.logo {
+  height: 100%;
+  /* border: solid; */
+  border-width: 1px;
+  border-color: rgb(34, 34, 34);
+}
+
+.experience-date-range {
+  color: rgb(176, 176, 176);
+  font-size: 0.875rem;
+}
+
+.experience-content p,
+.experience-content li {
+  font-size: 0.875rem;
+  letter-spacing: -0.25px;
+}

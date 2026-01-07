@@ -1,0 +1,108 @@
+html {
+  touch-action: manipulation;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+header {
+  z-index: 2;
+}
+
+#top-banner {
+  width: 100%;
+  max-width: none;
+  position: fixed;
+  bottom: 0;
+  min-height: auto;
+  padding: 0 10px 0 10px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: auto !important;
+}
+
+#speed-slider-container {
+  z-index: 2;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+}
+
+.form-label-group p {
+  margin: 0;
+}
+
+.form-label-group input {
+  margin-bottom: 10px;
+}
+
+canvas#game-canvas {
+  image-rendering: pixelated;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
+canvas#preview-canvas {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  z-index: 1;
+  background-color: white;
+  border: solid;
+}
+
+div.button-container {
+  z-index: 1;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+div#pattern-dropdown-container {
+  z-index: 1;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+#rotate-button {
+  display: none;
+}
+
+#sandbox-footer button,
+div#pattern-dropdown-container select {
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+  height: 40px;
+  max-width: 20vw;
+  color: black;
+  font-weight: 700;
+  margin: 0;
+}
+
+#sandbox-footer button:hover,
+div#pattern-dropdown-container select:hover {
+  background-color: rgb(0, 0, 0);
+  border: solid;
+  border-color: white;
+  color: white;
+}

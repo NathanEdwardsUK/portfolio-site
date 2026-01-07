@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- {% load static %} -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/home.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+
+  <title>Nathan Edwards</title>
+
+  <link rel="icon" type="image/png" href="/img/portfolio-logo.png">
+</head>
+
+<body>
+  <header>
+    <div id="top-banner" class="d-flex align-items-center justify-content-between px-3">
+      <div id="quick-bar-left" class="d-flex align-items-center justify-content-between">
+        <img id="site-logo" src="/img/portfolio-logo.png" />
+        <a href="/home.html">Home</a>
+        <a href="/about.html">About</a>
+      </div>
+      <div id="quick-bar-right" class="d-flex align-items-center justify-content-between">
+        <a href="https://github.com/NathanEdwardsUK" target="_blank"><img id="github-logo" src="/img/github-logo.png" />
+        </a>
+        <a href="https://www.linkedin.com/in/nathan-e-95155214b" target="_blank"><img id="linkedin-logo"
+            src="img/linkedin-logo.png" /></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-fluid py-4">
+      <h1>Nathan Edwards</h1>
+    </div>
+    <div class="container-fluid py-4">
+      <p>
+        Hello! I'm a software developer and former trader with 5 years experience
+        working at top-tier algorithmic-trading firm Flow Traders.
+        I've been head of multiple desks, product owner of critical trading
+        applications and a member of the Trader Tech Team.
+        I specialised in designing, building and operating world-class
+        higly-automated trading systems.
+        <br><br>
+        I strongly believe in the importance of continuous learning and I built
+        this website both to demonstrate what I know and as a learning project in
+        itself to discover the wonders of web development.
+      </p>
+    </div>
+
+
+    <div class="container-fluid py-2 mb-4">
+      <button class="btn rounded btn-light">
+        <a href="/about.html">About Me</a>
+      </button>
+    </div>
+
+
+    <div class="container-fluid py-4">
+      <h3 class="mb-4">Projects:</h3>
+
+      <div id="project-container" class="container-fluid py-2 px-3 mb-5 rounded">
+        <h4>Fittr: Strength & Nutrition</h4>
+        <img id="fittr-previews" src="/img/fittr-previews.png" />
+        <p>
+          Fittr is a privacy-first iOS fitness tracker for logging nutrition,
+          workouts and bodyweight with a local-only, account-free design.
+          <br /><br />
+          I built Fittr after being frustrated not being able to find a good app
+          for tracking both my diet and gym sessions, and on top of that premium tiers
+          for the apps I used cost between 5€ and 20€ a month for basic
+          features all the while selling your data.
+          <br />
+        </p>
+        <div class="text-center mb-4">
+          <a href="https://fittr.info">Website</a> | <a
+            href="https://apps.apple.com/us/app/fittr-strength-nutrition/id6748613080">App Store</a>
+        </div>
+        <div class="d-flex flex-wrap gap-3 align-items-center">
+          <p class="mb-0">Tech Stack:</p>
+          <div class="tech-item">
+            <p>React Native</p>
+          </div>
+          <div class="tech-item">
+            <p>Typescript</p>
+          </div>
+          <div class="tech-item">
+            <p>Expo</p>
+          </div>
+          <div class="tech-item">
+            <p>SQLite</p>
+          </div>
+          <div class="tech-item">
+            <p>Figma</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="project-container" class="container-fluid py-2 px-3 my-5 rounded">
+        <h4>Conway's Game of Life</h4>
+        <div class="d-flex mb-3 justify-content-center" id="gol-canvas-container">
+          <canvas id="gol-canvas"></canvas>
+        </div>
+        <p>
+          Described as a "zero player game" by it's creator, mathematician John Conway,
+          the <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game of Life</a> composes of a grid of
+          cells, which are either dead or alive, and has a simple set of rules
+          which
+          decide whether each cell will be alive or dead in the next turn.<br><br>
+          Conway invented the game as a demonstration that simple rules and the right starting conditions
+          can lead to chaotic and even self replicating systems.<br><br>
+          As a mathematics undergrad I was fascinated by this concept. <a href="/sandbox.html">Checkout my sandbox
+            implementation here</a>. You can play around with setting up your own patterns and seeing how the game
+          evolves, or choose from a dropdown list of amazing community discovered automata like the ones you see above.
+        </p>
+        <div class="d-flex flex-wrap gap-3 align-items-center">
+          <p class="mb-0">Tech Stack:</p>
+          <div class="tech-item">
+            <p>JavaScript</p>
+          </div>
+          <div class="tech-item">
+            <p>HTML</p>
+          </div>
+          <div class="tech-item">
+            <p>CSS</p>
+          </div>
+          <div class="tech-item">
+            <p>HTML Canvas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- {% block footer %} -->
+  <footer class="d-flex justify-content-center pt-5">
+    <div id="bottom-banner" class="d-flex flex-column align-items-center justify-content-between">
+      <p>Feel free to reach out!</p>
+      <p>nathanedwardsuk@gmail.com</p>
+    </div>
+  </footer>
+</body>
+<!-- {% endblock footer %} -->
+
+<script type="module" src="/js/game_of_life/gol_home.js"></script>
+
+</html>
+
+
+<!-- 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+{% extends "base.html" %}
+{% load static %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{% static 'pages/css/home.css' %}">
+{% endblock %}
+
+
+{% block main %}
+<main>
+  <div class="container-fluid py-4">
+    <h1>Nathan Edwards</h1>
+  </div>
+  <div class="container-fluid py-4">
+    <p>
+      Hello! I'm a software developer and former trader with 5 years experience
+      working at top-tier algorithmic-trading firm Flow Traders.
+      I've been head of multiple desks, product owner of critical trading
+      applications and a member of the Trader Tech Team.
+      I specialised in designing, building and operating world-class
+      higly-automated trading systems.
+      <br><br>
+      I strongly believe in the importance of continuous learning and I built
+      this website both to demonstrate what I know and as a learning project in
+      itself to discover the wonders of web development.
+    </p>
+  </div>
+
+
+  <div class="container-fluid py-2 mb-4">
+    <button class="btn rounded btn-light">
+      <a href="{% url 'about' %}">About Me</a>
+    </button>
+  </div>
+
+
+  <div class="container-fluid py-4">
+    <h3 class="mb-4">Projects:</h3>
+
+    <div id="project-container" class="container-fluid py-2 px-3 mb-5 rounded">
+      <h4>Fittr: Strength & Nutrition</h4>
+      <img id="fittr-previews" src="{% static 'pages/img/fittr-previews.png' %}" />
+      <p>
+        Fittr is a privacy-first iOS fitness tracker for logging nutrition,
+        workouts and bodyweight with a local-only, account-free design.
+        <br /><br />
+        I built Fittr after being frustrated not being able to find a good app
+        for tracking both my diet and gym sessions, and on top of that premium tiers
+        for the apps I used cost between 5€ and 20€ a month for basic
+        features all the while selling your data.
+        <br />
+      </p>
+      <div class="text-center mb-4">
+        <a href="https://fittr.info">Website</a> | <a
+          href="https://apps.apple.com/us/app/fittr-strength-nutrition/id6748613080">App Store</a>
+      </div>
+      <div class="d-flex flex-wrap gap-3 align-items-center">
+        <p class="mb-0">Tech Stack:</p>
+        <div class="tech-item">
+          <p>React Native</p>
+        </div>
+        <div class="tech-item">
+          <p>Typescript</p>
+        </div>
+        <div class="tech-item">
+          <p>Expo</p>
+        </div>
+        <div class="tech-item">
+          <p>SQLite</p>
+        </div>
+        <div class="tech-item">
+          <p>Figma</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="project-container" class="container-fluid py-2 px-3 my-5 rounded">
+      <h4>Conway's Game of Life</h4>
+      <div class="d-flex mb-3 justify-content-center" id="gol-canvas-container">
+        <canvas id="gol-canvas"></canvas>
+      </div>
+      <p>
+        Described as a "zero player game" by it's creator, mathematician John Conway,
+        the <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game of Life</a> composes of a grid of
+        cells, which are either dead or alive, and has a simple set of rules
+        which
+        decide whether each cell will be alive or dead in the next turn.<br><br>
+        Conway invented the game as a demonstration that simple rules and the right starting conditions
+        can lead to chaotic and even self replicating systems.<br><br>
+        As a mathematics undergrad I was fascinated by this concept. <a href="{% url 'sandbox' %}">Checkout my sandbox
+          implementation here</a>. You can play around with setting up your own patterns and seeing how the game
+        evolves, or choose from a dropdown list of amazing community discovered automata like the ones you see above.
+      </p>
+      <div class="d-flex flex-wrap gap-3 align-items-center">
+        <p class="mb-0">Tech Stack:</p>
+        <div class="tech-item">
+          <p>JavaScript</p>
+        </div>
+        <div class="tech-item">
+          <p>HTML</p>
+        </div>
+        <div class="tech-item">
+          <p>CSS</p>
+        </div>
+        <div class="tech-item">
+          <p>HTML Canvas</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</main>
+{% endblock %}
+
+{% block scripts %}
+<script type="module" src="{% static 'game_of_life/js/gol_home.js' %}"></script>
+{% endblock %}
+
+</html> -->

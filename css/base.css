@@ -1,0 +1,123 @@
+* {
+  /* font-family: "Courier New", monospace; */
+  /* font-family: "Inter", monospace; */
+  /* font-family: "Lucida Console", monospace; */
+  /* font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", monospace; */
+  /* font-family: "Segoe UI", monospace; */
+  /* font-family: "Montserrat", monospace; */
+  /* font-family: "Open Sans", "Helvetica Neue", monospace; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 2;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  font-weight: 500;
+  font-size: medium;
+  color: rgb(240, 240, 240);
+}
+
+body {
+  background-color: black !important;
+  margin: 0;
+  min-height: 100vh;
+}
+
+#top-banner,
+main,
+footer {
+  max-width: 900px;
+  width: 80vw;
+  min-width: min(800px, 90vw);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  height: 60px;
+  border-bottom: solid;
+  border-color: white;
+  border-width: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+main {
+  min-height: calc(100vh - 140px);
+  margin-top: 60px;
+  min-height: 100vh;
+}
+
+main a {
+  color: rgb(125, 153, 255);
+}
+
+footer {
+  min-height: 80px;
+  margin-bottom: 50px;
+}
+
+#bottom-banner {
+  width: 66%;
+  margin: auto 20px auto 20px;
+  border-top: solid;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 0 20px 0;
+}
+
+#top-banner {
+  height: 100%;
+  padding: 10px 0 10px 0;
+}
+
+#site-logo {
+  width: 40px;
+}
+
+#top-banner a {
+  color: white;
+  text-decoration: none;
+}
+
+#quick-bar-left a {
+  margin-left: 30px;
+  font-size: large;
+}
+
+#quick-bar-right a {
+  margin-left: 20px;
+}
+
+#top-banner.quick-bar {
+  width: 20%;
+}
+
+#github-logo {
+  width: 20px;
+}
+
+#linkedin-logo {
+  width: 24px;
+}
+
+.btn,
+.btn a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn:hover {
+  border: solid;
+  background-color: black;
+  border-color: white;
+  color: white;
+}
