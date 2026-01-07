@@ -37,29 +37,8 @@
       <h1>Nathan Edwards</h1>
     </div>
     <div class="container-fluid py-4 px-0">
-      <!-- <p>
-        Hello! I'm a software developer and former senior trader with 5 years experience
-        working at top-tier algorithmic-trading firm Flow Traders.
-        I've been head of multiple desks, product owner of critical trading
-        applications and a member of the Trader Tech Team.
-        I specialised in designing, building and operating world-class
-        higly-automated trading systems.
-        <br><br>
-        I strongly believe in the importance of continuous learning and I built
-        this website both to demonstrate what I know and as a learning project in
-        itself to discover the wonders of web development.
-      </p> -->
       <p>
         Hello! I’m a software developer with a background in algorithmic trading and product ownership.
-        <!-- <br><br> -->
-        <!-- I spent five years at Flow Traders designing, building, and operating highly automated trading systems,
-        alongside leading trading desks and owning business-critical internal applications.
-        <br><br>
-        Over the last year, I’ve focused on transitioning into full-time software development — building
-        production-ready
-        products end-to-end, from architecture and implementation through to release. Most recently, I built Fittr, a
-        privacy-first iOS fitness tracker designed around a local-only, offline-first data model.
-        <br><br> -->
         This site showcases some of the projects I’ve worked on and reflects my interest in building thoughtful,
         reliable
         software with a strong product focus.
@@ -86,7 +65,7 @@
         </picture>
         <p>
           Fittr is a privacy-first iOS fitness tracker for logging nutrition,
-          workouts and bodyweight with a local-only, account-free design.
+          workouts and body metrics with a local-only, account-free design.
           <br /><br />
           I built Fittr after being frustrated not being able to find a good app
           for tracking both my diet and gym sessions, and on top of that premium tiers
@@ -167,133 +146,3 @@
 <script type="module" src="/js/game_of_life/gol_home.js"></script>
 
 </html>
-
-
-<!-- 
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-{% extends "base.html" %}
-{% load static %}
-
-{% block stylesheets %}
-<link rel="stylesheet" href="{% static 'pages/css/home.css' %}">
-{% endblock %}
-
-
-{% block main %}
-<main>
-  <div class="container-fluid py-4">
-    <h1>Nathan Edwards</h1>
-  </div>
-  <div class="container-fluid py-4">
-    <p>
-      Hello! I'm a software developer and former trader with 5 years experience
-      working at top-tier algorithmic-trading firm Flow Traders.
-      I've been head of multiple desks, product owner of critical trading
-      applications and a member of the Trader Tech Team.
-      I specialised in designing, building and operating world-class
-      higly-automated trading systems.
-      <br><br>
-      I strongly believe in the importance of continuous learning and I built
-      this website both to demonstrate what I know and as a learning project in
-      itself to discover the wonders of web development.
-    </p>
-  </div>
-
-
-  <div class="container-fluid py-2 mb-4">
-    <button class="btn rounded btn-light">
-      <a href="{% url 'about' %}">About Me</a>
-    </button>
-  </div>
-
-
-  <div class="container-fluid py-4">
-    <h3 class="mb-4">Projects:</h3>
-
-    <div id="project-container" class="container-fluid py-2 px-3 mb-5 rounded">
-      <h4>Fittr: Strength & Nutrition</h4>
-      <img id="fittr-previews" src="{% static 'pages/img/fittr-previews.png' %}" />
-      <p>
-        Fittr is a privacy-first iOS fitness tracker for logging nutrition,
-        workouts and bodyweight with a local-only, account-free design.
-        <br /><br />
-        I built Fittr after being frustrated not being able to find a good app
-        for tracking both my diet and gym sessions, and on top of that premium tiers
-        for the apps I used cost between 5€ and 20€ a month for basic
-        features all the while selling your data.
-        <br />
-      </p>
-      <div class="text-center mb-4">
-        <a href="https://fittr.info">Website</a> | <a
-          href="https://apps.apple.com/us/app/fittr-strength-nutrition/id6748613080">App Store</a>
-      </div>
-      <div class="d-flex flex-wrap gap-3 align-items-center">
-        <p class="mb-0">Tech Stack:</p>
-        <div class="tech-item">
-          <p>React Native</p>
-        </div>
-        <div class="tech-item">
-          <p>Typescript</p>
-        </div>
-        <div class="tech-item">
-          <p>Expo</p>
-        </div>
-        <div class="tech-item">
-          <p>SQLite</p>
-        </div>
-        <div class="tech-item">
-          <p>Figma</p>
-        </div>
-      </div>
-    </div>
-
-    <div id="project-container" class="container-fluid py-2 px-3 my-5 rounded">
-      <h4>Conway's Game of Life</h4>
-      <div class="d-flex mb-3 justify-content-center" id="gol-canvas-container">
-        <canvas id="gol-canvas"></canvas>
-      </div>
-      <p>
-        Described as a "zero player game" by it's creator, mathematician John Conway,
-        the <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game of Life</a> composes of a grid of
-        cells, which are either dead or alive, and has a simple set of rules
-        which
-        decide whether each cell will be alive or dead in the next turn.<br><br>
-        Conway invented the game as a demonstration that simple rules and the right starting conditions
-        can lead to chaotic and even self replicating systems.<br><br>
-        As a mathematics undergrad I was fascinated by this concept. <a href="{% url 'sandbox' %}">Checkout my sandbox
-          implementation here</a>. You can play around with setting up your own patterns and seeing how the game
-        evolves, or choose from a dropdown list of amazing community discovered automata like the ones you see above.
-      </p>
-      <div class="d-flex flex-wrap gap-3 align-items-center">
-        <p class="mb-0">Tech Stack:</p>
-        <div class="tech-item">
-          <p>JavaScript</p>
-        </div>
-        <div class="tech-item">
-          <p>HTML</p>
-        </div>
-        <div class="tech-item">
-          <p>CSS</p>
-        </div>
-        <div class="tech-item">
-          <p>HTML Canvas</p>
-        </div>
-      </div>
-    </div>
-
-
-
-
-  </div>
-</main>
-{% endblock %}
-
-{% block scripts %}
-<script type="module" src="{% static 'game_of_life/js/gol_home.js' %}"></script>
-{% endblock %}
-
-</html> -->
